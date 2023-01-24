@@ -25,7 +25,13 @@ tailwind.config = {
 					'0 55px 35px -20px rgba(0, 0, 0, 0.30)',
 					'0 55px 65px -10px rgba(0, 0, 0, 0.15)'
 				]
-			}
+			},
+			transitionTimingFunction: {
+				'in-expo': 'cubic-bezier(1,.05,0,.87)',
+			},
+			animation: {
+				'bounce': 'bounce 2200ms ease-in-out 3.5',
+			},
 		}
 	}
 }
