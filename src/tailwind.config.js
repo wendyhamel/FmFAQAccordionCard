@@ -20,6 +20,9 @@ tailwind.config = {
 			margin: {
 				'18': '4.5rem',
 			},
+			maxHeight: {
+				'11b': '2.8125rem'
+			},
 			boxShadow: {
 				'bold': [
 					'0 55px 35px -20px rgba(0, 0, 0, 0.30)',
