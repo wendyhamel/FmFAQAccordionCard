@@ -26,12 +26,20 @@ tailwind.config = {
 					'0 55px 65px -10px rgba(0, 0, 0, 0.15)'
 				]
 			},
-			transitionTimingFunction: {
-				'in-expo': 'cubic-bezier(1,.05,0,.87)',
-			},
 			animation: {
-				'bounce': 'bounce 2200ms ease-in-out 3.5',
+				'float': 'float 4s cubic-bezier(.4,0,.6,1) infinite',
+				'scale': 'scale 4s cubic-bezier(.4,0,.6,1) infinite',
 			},
+			keyframes: {
+				float: {
+					'0%, 100%': { transform: 'translateY(-3px)' },
+					'50%': { transform: 'translateY(3px)' },
+				},
+				scale: {
+					'0%, 100%': { transform: 'scale(1.02)', opacity: 0.8 },
+					'50%': { transform: 'scale(0.98)', opacity: 1},
+				}
+			}
 		}
 	}
 }
